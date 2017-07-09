@@ -1,0 +1,29 @@
+{
+  "name": "webpack-3-react-hot-loader",
+  "version": "1.0.0",
+  "description": "A minimal example of setting up Webpack 3 and react-hot-loader together",
+  "module": "src/index.js",
+  "repository": "https://github.com/kohlmannj/webpack-3-react-hot-loader",
+  "author": "Joseph Kohlmann <joseph.kohlmann@nytimes.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server --hot",
+    "build": "webpack",
+    "dist": "NODE_ENV=production webpack -p"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "html-webpack-plugin": "^2.29.0",
+    "react-hot-loader": "^3.0.0-beta.7",
+    "webpack": "^3.1.0"
+  },
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "webpack-dev-server": "^2.5.1"
+  }
+}
