@@ -23,3 +23,4 @@ index.js:41996 [HMR] App is up to date.
 ## For More Info
 - [Webpack Guides - Hot Module Replacement](https://webpack.js.org/guides/hot-module-replacement/)
 - [Webpack - Development - Adjusting Your Text Editor](https://webpack.js.org/guides/development/#adjusting-your-text-editor)
+- [React Hot Loader - Instructions for Webpack 2](https://github.com/gaearon/react-hot-loader/tree/next/docs#webpack-2)

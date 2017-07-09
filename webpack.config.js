@@ -12,6 +12,7 @@ module.exports = options => ({
   },
 
   entry: removeEmpty([
+    'babel-polyfill',
     // Only load these entry points for non-production mode
     process.env.NODE_ENV !== 'production'
       ? 'react-hot-loader/patch'
