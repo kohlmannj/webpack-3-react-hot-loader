@@ -16,9 +16,14 @@ module.exports = options => ({
     process.env.NODE_ENV !== 'production'
       ? 'react-hot-loader/patch'
       : undefined,
-    process.env.NODE_ENV !== 'production'
-      ? 'webpack-dev-server/client?http://localhost:8080/'
-      : undefined,
+    /* Note: webpack-dev-server automatically adds an entry like:
+     * 'webpack-dev-server/client?http://localhost:8080/'
+     * If you end up using webpack-dev-middleware and webpack-hot-middleware,
+     * you should manually add:
+     */
+    // process.env.NODE_ENV !== 'production'
+    //   ? 'webpack-hot-middleware/client'
+    //   : undefined,
     process.env.NODE_ENV !== 'production'
       ? 'webpack/hot/only-dev-server'
       : undefined,
